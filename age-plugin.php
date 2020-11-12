@@ -28,7 +28,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-Copyright 2005-2015 Automattic, Inc.
+Copyright 2005-2015 Automatic, Inc.
 */
 
 defined('ABSPATH') or die('You can\'t access this file.');
@@ -42,10 +42,7 @@ if ( class_exists('AgePlugin')) {
 	// activation 
 	register_activation_hook(__FILE__, array($agePlugin, 'activate'));
 
-
 	// deactivation
 	register_activation_hook(__FILE__, array($agePlugin, 'deactivate'));
 
-	// uninstall
-	register_uninstall_hook(__FILE__, array($agePlugin, 'unistall'));
 }
