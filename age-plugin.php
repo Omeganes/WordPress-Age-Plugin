@@ -47,4 +47,5 @@ if ( class_exists('AgePlugin')) {
 	register_activation_hook(__FILE__, array($agePlugin, 'deactivate'));
 
 	// uninstall
+	register_uninstall_hook(__FILE__, array($agePlugin, 'unistall'));
 }

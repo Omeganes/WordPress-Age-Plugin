@@ -1,6 +1,11 @@
 <?php
 
+/**
+ * App Class
+ * @package AgePlugIn
+ */
 
+ 
 class AgePlugin 
 {
 	function __construct() {
@@ -35,7 +40,10 @@ class AgePlugin
         flush_rewrite_rules();
     }
 
-	function deactivate() {}
+	function deactivate() {
+		flush_rewrite_rules();
+	}
+	
 	function uninstall() {}
 
 
